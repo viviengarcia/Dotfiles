@@ -14,8 +14,8 @@ cask_args appdir: '/Applications'
 apps=(
 	firefox
 	google-chrome
-    adobe-acrobat-reader
-    kindle
+	adobe-acrobat-reader
+	kindle
 	vlc
 	openemu
 	steam
