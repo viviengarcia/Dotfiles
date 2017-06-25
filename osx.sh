@@ -389,14 +389,3 @@ for app in "Activity Monitor" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
-# ########################################
-# DOCK
-#
-dockutil --no-restart --remove all
-dockutil --no-restart --add "/Applications/Firefox.app"
-dockutil --no-restart --add "/Applications/Calendar.app"
-dockutil --no-restart --add "/Applications/Utilities/iTerm.app"
-dockutil --no-restart --add "/Applications/System Preferences.app"
-
-killall Dock
