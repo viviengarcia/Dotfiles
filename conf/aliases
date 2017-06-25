@@ -1,0 +1,29 @@
+# alias s='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -w'
+alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w'
+# alias s="subl -w ."
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+
+alias ll='ls -l'
+alias la='ls -a'
+alias bashpro='s ~/.bash_profile'
+alias bashals='s ~/.bash/aliases'
+alias bashsrc='source ~/.bash_profile'
+alias gommit='git commit -m'
+alias fdeploy='fab -f deploy.py put_file:file=./output/*'
+alias where='type -a'
+
+#bower
+alias bowergw='bower install git://github.com/viviengarcia/gulp_workflow.git'
+
+alias starters='bower install git://github.com/viviengarcia/starters_files.git'
+
+#server connections
+#alias serveur='ssh gonfreecs@ns317933.ip-5-39-85.eu' deprecated
+
+#lancer postgresql
+alias pgstart='postgres -D /usr/local/var/postgres'
