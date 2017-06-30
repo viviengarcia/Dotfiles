@@ -4,9 +4,10 @@ These are my dotfiles. Not the best one can find but at least I tried to take *f
 
 ## Install
 
-Install XCode from Mac App Store, and the Command Line Tools using a Terminal:
-
+Install Command Line Tools without Xcode
 `xcode-select --install`
+
+Or, alternatively, install XCode from Mac App Store, and the Command Line Tools from the preferences.
 
 Then you can clone the Dotfiles repository in your User folder:
 
