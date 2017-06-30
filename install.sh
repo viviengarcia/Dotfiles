@@ -13,6 +13,7 @@ source ~/.bash_profile
 
 # Set Applications Preferences via mackup
 source ~/.mackup.cfg
+mackup restore
 
 # Set OS X preferences
 source ~/.dotfiles/.osx
