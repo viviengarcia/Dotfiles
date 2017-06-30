@@ -188,6 +188,25 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Show All File Extensions
 defaults write -g AppleShowAllExtensions -bool true
 
+# Hide automatically generated user folders and create Symbolic links to get them from elsewhere
+# create a folder to get the links
+mkdir ~/vivien/Links
+# hide the folders
+chflags hidden ~/vivien/Music
+chflags hidden ~/vivien/Pictures
+chflags hidden ~/vivien/Movies
+chflags hidden ~/vivien/Sites
+chflags hidden ~/vivien/Downloads
+chflags hidden ~/vivien/Public
+# create the links
+ln -sfv "~/vivien/Music" "~/Links/vivien/Music"
+ln -sfv "~/vivien/Music" "~/Links/vivien/Pictures"
+ln -sfv "~/vivien/Music" "~/Links/vivien/Movies"
+ln -sfv "~/vivien/Music" "~/Links/vivien/Sites"
+ln -sfv "~/vivien/Music" "~/Links/vivien/Downloads"
+ln -sfv "~/vivien/Music" "~/Links/vivien/Public"
+
+
 # DOCK, DASHBOARD and HOT CORNERS
 
 # Set the icon size of Dock items to 36 pixels
