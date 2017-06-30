@@ -283,6 +283,9 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Disable local Time Machine backups
 hash tmutil &> /dev/null && sudo tmutil disablelocal
 
+#This changes the interval to 30 minutes. The integer value is the time in seconds.
+sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int 1800
+
 # TEXTEDIT
 
 # Use plain text mode for new TextEdit documents
