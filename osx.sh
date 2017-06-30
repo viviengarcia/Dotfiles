@@ -185,6 +185,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Comments -bool true \
 	OpenWith -bool true
 
+# Show All File Extensions
+defaults write -g AppleShowAllExtensions -bool true
+
 # DOCK, DASHBOARD and HOT CORNERS
 
 # Set the icon size of Dock items to 36 pixels
