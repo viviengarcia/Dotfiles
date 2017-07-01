@@ -1,0 +1,22 @@
+#--------------------------------------------------------------------------#
+
+# E X P O R T S
+
+#--------------------------------------------------------------------------#
+# Set architecture flags
+export ARCHFLAGS="-arch x86_64"
+
+# Set SublimeText 2 default text editor
+export EDITOR='subl -w'
+
+# Make some commands not show up in history
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+
+# Ensure user-installed (homebrew) binaries take precedence
+export PATH=~/.rbenv/shims:/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/bin/flake8:/usr/local/bin/git:/usr/bin:/bin:/usr/sbin:/sbin
+
+# Set PATH for Rust language
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Ensure node packages are used globally
+export NODE_PATH=/usr/lib/node_modules
