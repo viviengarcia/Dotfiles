@@ -2,16 +2,15 @@
 
 echo "Setting up your Mac..."
 
-# Set Bash settings
-source ~/.bash_profile
-
 # Installing software via Homebrew and Homebrew/Cask
 source ~/Dotfiles/cask
+
+# Set Bash settings
+source ~/.bash_profile
 
 # Set Applications Preferences via mackup
 source ~/.mackup.cfg
 mackup restore
-
 
 # Set OS X preferences
 source ~/Dotfiles/osx
