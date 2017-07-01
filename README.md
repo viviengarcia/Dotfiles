@@ -11,10 +11,12 @@ Or, alternatively, install XCode from Mac App Store, and the Command Line Tools 
 
 Then you can clone the Dotfiles repository in your User folder:
 
-`git clone https://github.com/viviengarcia/Dotfiles.git ~/.dotfiles`
+`git clone https://github.com/viviengarcia/Dotfiles.git ~/Git/Dotfiles`
 
-Launching the script is simple as:
+Launching the script is as simple as:
 
-`source ~/.dotfiles/install.sh`
+`source ~/Git/Dotfiles/deploy.sh`
+
+`source ~/Git/Dotfiles/install.sh`
 
 Disclaimer: This project is adapted to  my very own usage, and using it "as is" could and should lead to problems. Use it at your own risks.
