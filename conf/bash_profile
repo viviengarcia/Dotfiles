@@ -17,12 +17,6 @@ for file in ~/.bash{path,prompt,exports,aliases,functions,extra,inputrc}; do
 done;
 unset file;
 
-# Make Tab autocomplete regardless of filename case
-set completion-ignore-case on
-
-# List all matches in case multiple possible completions are possible
-set show-all-if-ambiguous on
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
