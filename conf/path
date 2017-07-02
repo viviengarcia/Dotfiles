@@ -1,0 +1,10 @@
+
+
+#--------------------------------------------------------------------------#
+
+# P A T H
+
+#--------------------------------------------------------------------------#
+
+# Ensure user-installed (homebrew) binaries take precedence
+export PATH=~/.rbenv/shims:/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/bin/flake8:/usr/local/bin/git:/usr/bin:/bin:/usr/sbin:/sbin
