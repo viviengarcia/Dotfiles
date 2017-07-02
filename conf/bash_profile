@@ -49,3 +49,7 @@ fi;
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# R U B Y
+# Ensure rbenv will be used first
+eval "$(rbenv init -)"
