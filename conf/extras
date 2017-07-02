@@ -1,0 +1,15 @@
+
+
+#--------------------------------------------------------------------------#
+
+# E X T R A S
+
+#--------------------------------------------------------------------------#
+
+# Launch postgresql
+alias pgstart='postgres -D /usr/local/var/postgres'
+
+# Bower
+alias bowergw='bower install git://github.com/viviengarcia/gulp_workflow.git'
+
+alias starters='bower install git://github.com/viviengarcia/starters_files.git'
