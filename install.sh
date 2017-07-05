@@ -2,6 +2,9 @@
 
 echo "Setting up your Mac..."
 
+# Établissement des liens symboliques
+source ~/Dotfiles/symlinks.sh
+
 # Installing software via Homebrew and Homebrew/Cask
 source ~/Dotfiles/cask
 
