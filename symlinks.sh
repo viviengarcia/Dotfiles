@@ -2,7 +2,7 @@
 
 #--------------------------------------------------------------------------#
 
-# D E P L O Y
+# S Y M L I N K S
 
 #--------------------------------------------------------------------------#
 # This shell script creates symbolic links to Bash configuration files, so the ".dotfiles" git repo isn't at the root of my Home directory but more logicaly in my projects folder. Another aim is to help separate Bash configuration and System installation, because linking files isn't in the install script anymore
