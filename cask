@@ -58,7 +58,6 @@ brew cask install "${apps[@]}"
 brew cask install qlstephen qlmarkdown quicklook-csv qlimagesize webpquicklook qlvideo quicklook-pat
 
 # Fonts
-cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
