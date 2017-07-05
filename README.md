@@ -15,8 +15,6 @@ Then you can clone the Dotfiles repository in your User folder:
 
 Launching the script is as simple as:
 
-`source ~/Git/Dotfiles/deploy.sh`
-
 `source ~/Git/Dotfiles/install.sh`
 
 Disclaimer: This project is adapted to  my very own usage, and using it "as is" could and should lead to problems. Use it at your own risks.
