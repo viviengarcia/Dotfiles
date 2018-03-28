@@ -1,7 +1,9 @@
-if ! is-executable brew; then
-	echo "Skipping: Homebrew-Cask (not found: brew)"
-	return
-fi
+#if ! is-executable brew; then
+	#echo "Skipping: Homebrew-Cask (not found: brew)"
+	#return
+#fi
+
+echo "Récupération de Cask, etc"
 
 brew tap caskroom/cask
 brew install brew-cask
@@ -15,7 +17,6 @@ apps=(
 	firefox
 	google-chrome
 	adobe-acrobat-reader
-	kindle
 	vlc
 	openemu
 	steam
@@ -48,16 +49,29 @@ apps=(
 	appzapper
 	cakebrew
 	iterm2
-	1password
 	team-viewer
 )
 
+echo "Début de l'installation des applications, patienter..."
+
 brew cask install "${apps[@]}"
+
+echo "Fin de l'installation des applications"
+
+echo "Début de l'installation des plugins QuickLook"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlstephen qlmarkdown quicklook-csv qlimagesize webpquicklook qlvideo quicklook-pat
+
+echo "Fin de l'installation des plugins QuickLook"
+
+echo "Début de l'installation des Fonts"
 
 # Fonts
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+
+echo "Fin de l'installation des Fonts"
+
+echo "Fin du script"

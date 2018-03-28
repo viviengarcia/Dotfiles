@@ -19,15 +19,15 @@ alias ll='ls -l'
 alias la='ls -a'
 
 # Update Bash configuration
-alias profile='s ~/.bash_profile'
-alias aliases='s ~/.bash/aliases'
-alias aliases='s ~/.bash/exports'
-alias aliases='s ~/.bash/extras'
-alias aliases='s ~/.bash/functions'
-alias aliases='s ~/.bash/inputrc'
-alias aliases='s ~/.bash/path'
-alias aliases='s ~/.bash/prompt'
-alias src='source ~/.bash_profile'
+alias profile='s ~/Digital\ Creation/Dotfiles/conf/bash_profile'
+alias aliases='s ~/Digital\ Creation/Dotfiles/conf/aliases'
+alias exports='s ~/Digital\ Creation/Dotfiles/conf/exports'
+alias extras='s ~/Digital\ Creation/Dotfiles/conf/extras'
+alias functions='s ~/Digital\ Creation/Dotfiles/conf/functions'
+alias inputrc='s ~/Digital\ Creation/Dotfiles/conf/inputrc'
+alias path='s ~/Digital\ Creation/Dotfiles/conf/path'
+alias prompt='s ~/Digital\ Creation/Dotfiles/conf/prompt'
+alias reload='source ~/Digital\ Creation/Dotfiles/conf/bash_profile'
 
 # Git
 alias g="git"
@@ -36,3 +36,18 @@ alias gcm='g commit -m'
 # Locate all executable of the file named after
 # e.g. where python will return where are the python executables
 alias where='type -a'
+
+# Show Hidden Files in Finder
+alias show='defaults write com.apple.finder AppleShowAllFiles -bool True && killall Finder'
+
+# Hide Hidden Files in Finder
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool False && killall Finder'
+
+# Exiftool
+alias ef='exiftool '
+
+# Hide a folder in Finder (but not from spotlight)
+alias hidef="chflags hidden "
+
+# Show a folder in Finder
+alias showf="chflags nohidden "
