@@ -12,7 +12,7 @@ test -f ~/.bashrc && source ~/.bashrc
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.bash/{path,prompt,exports,aliases,functions,extra,inputrc}; do
+for file in ~/.bash/{.path,.prompt,.exports,.aliases,.functions,.extra,.inputrc}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -38,19 +38,19 @@ if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completio
 fi;
 
 # Add tab completion for many Bash commands
-#if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/#bash_completion" ]; then
-#   source "$(brew --prefix)/share/bash-completion/bash_completion";
-#elif [ -f /etc/bash_completion ]; then
-#    source /etc/bash_completion;
-#fi;
+if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/#bash_completion" ]; then
+   source "$(brew --prefix)/share/bash-completion/bash_completion";
+elif [ -f /etc/bash_completion ]; then
+    source /etc/bash_completion;
+fi;
 
 # Thanks to @tmoitie, adds more tab completion for bash,
 # also when hitting tab twice it will show a list.
-#if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#    . $(brew --prefix)/etc/bash_completion
-#fi
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 # R U B Y
 # Ensure rbenv will be used first
-# eval "$(rbenv init -)"
-# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#eval "$(rbenv init -)"
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

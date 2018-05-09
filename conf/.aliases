@@ -18,16 +18,16 @@ alias ......='cd ../../../../../'
 alias ll='ls -l'
 alias la='ls -a'
 
-# Update Bash configuration
-alias profile='s ~/Digital\ Creation/Dotfiles/conf/bash_profile'
-alias aliases='s ~/Digital\ Creation/Dotfiles/conf/aliases'
-alias exports='s ~/Digital\ Creation/Dotfiles/conf/exports'
-alias extras='s ~/Digital\ Creation/Dotfiles/conf/extras'
-alias functions='s ~/Digital\ Creation/Dotfiles/conf/functions'
-alias inputrc='s ~/Digital\ Creation/Dotfiles/conf/inputrc'
-alias path='s ~/Digital\ Creation/Dotfiles/conf/path'
-alias prompt='s ~/Digital\ Creation/Dotfiles/conf/prompt'
-alias reload='source ~/Digital\ Creation/Dotfiles/conf/bash_profile'
+# Update Bash original user-configuration files
+alias profile='s ~/Digital\ Creation/Dotfiles/conf/.bash_profile'
+alias aliases='s ~/Digital\ Creation/Dotfiles/conf/.aliases'
+alias exports='s ~/Digital\ Creation/Dotfiles/conf/.exports'
+alias extras='s ~/Digital\ Creation/Dotfiles/conf/.extras'
+alias functions='s ~/Digital\ Creation/Dotfiles/conf/.functions'
+alias inputrc='s ~/Digital\ Creation/Dotfiles/conf/.inputrc'
+alias path='s ~/Digital\ Creation/Dotfiles/conf/.path'
+alias prompt='s ~/Digital\ Creation/Dotfiles/conf/.prompt'
+alias reload='source ~/Digital\ Creation/Dotfiles/conf/.bash_profile'
 
 # Git
 alias g="git"
