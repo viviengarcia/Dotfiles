@@ -51,3 +51,12 @@ alias hidef="chflags hidden "
 
 # Show a folder in Finder
 alias showf="chflags nohidden "
+
+# Python
+alias p="python3"
+alias pip="pip3"
+
+# Jekyll
+alias jbw="jekyll build --watch"
+alias jb="jekyll build"
+alias jpb="JEKYLL_ENV=production jekyll build"
